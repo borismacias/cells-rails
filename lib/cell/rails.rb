@@ -14,7 +14,7 @@ module Cell
         constant.cell(name, model, options, &block)
       end
 
-      def concept(name, model=nil, options={}, &block)
+      def concept(name, model=nil, **options, &block)
         cell(name, model, options, ::Cell::Concept, &block)
       end
     end

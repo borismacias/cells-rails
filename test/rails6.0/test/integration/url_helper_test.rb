@@ -5,7 +5,7 @@ end
 
 class WithDefaultOptionsController < ApplicationController
   private
-  def default_url_options(options={})
+  def default_url_options(**options)
     options.merge(anchor: 'foobar')
   end
 end
